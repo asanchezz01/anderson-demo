@@ -1,0 +1,65 @@
+<div style="margin: auto;">
+
+  <mat-form-field appearance="outline">
+    <mat-label>CPF</mat-label>
+    <input matInput id="cpf"
+    required
+    [(ngModel)]="cliente.cpf"
+    name="cpf">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" style="margin-left: 10px; width: 40%;">
+    <mat-label>Nome</mat-label>
+    <input matInput id="nome"
+    required
+    [(ngModel)]="cliente.nome"
+    name="nome">
+  </mat-form-field> 
+
+  <mat-form-field appearance="outline" style="margin-left: 10px; width: 20%;">
+    <mat-label>Telefone</mat-label>
+    <input matInput id="telefone"
+    required
+    [(ngModel)]="cliente.telefone"
+    name="telefone">
+  </mat-form-field> 
+
+  <button 
+    mat-raised-button color="primary" 
+    (click)="createCliente()"
+    style="margin-left: 10px;">Salvar</button>
+ 
+  <!-- Lista todas os clientes --> 
+
+<!--
+  <table mat-table [dataSource]="ClienteList" style="width: 100%; border: 2px solid #ccc">
+
+    <ng-container matColumnDef="cpf">
+      <th mat-header-cell *matHeaderCellDef> CPF </th>
+      <td mat-cell *matCellDef="let cliente"> {{cliente.cpf}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="nome">
+      <th mat-header-cell *matHeaderCellDef> Nome </th>
+      <td mat-cell *matCellDef="let cliente"> {{cliente.nome}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="telefone">
+      <th mat-header-cell *matHeaderCellDef> Telefone </th>
+      <td mat-cell *matCellDef="let cliente"> {{cliente.telefone}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>  </th>
+      <td mat-cell *matCellDef="let cliente">
+        <a (click)="deleteCliente(cliente.id)" style="cursor: pointer;">excluir</a>
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="colunas"></tr>
+
+    <tr mat-row *matRowDef="let row; columns: colunas;"></tr>
+  </table>
+-->
+  
+</div>

@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">Clientes Vivo</mat-toolbar>
+
+<mat-drawer-container>
+  <mat-drawer mode="side" opened style="width: 200px;">
+
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <a routerLink="createCliente">Clientes</a>
+      </mat-list-item>
+    </mat-list>
+
+  </mat-drawer>
+  
+  
+  <mat-drawer-content style="padding: 20px;">
+    <h3 mat-subheader>Cadastro</h3>
+    <app-cliente-create></app-cliente-create>
+  </mat-drawer-content>
+  
+  <mat-drawer-content style="padding: 20px;">
+    <h3 mat-subheader>Pesquisa</h3>
+    <app-cliente-search></app-cliente-search>
+  </mat-drawer-content>
+
+
+
+</mat-drawer-container>
